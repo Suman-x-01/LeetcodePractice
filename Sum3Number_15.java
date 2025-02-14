@@ -8,7 +8,7 @@ public class Sum3Number_15 {
 	public static void main(String[] args) {
 		int[] arr = {-1, 0, 1, 2, -1, -4};
 		List<List<Integer>> lists = threeSum(arr);
-
+		System.out.println(lists);
 	}
 
 	public static List<List<Integer>> threeSum(int[] nums) {
@@ -22,8 +22,8 @@ public class Sum3Number_15 {
 				int sum = nums[i] + nums[left] + nums[right];
 				if (sum == 0) {
 					list.add(Arrays.asList(nums[i], nums[left], nums[right]));
-					if (left < right &&nums[left] == nums[left + 1]) left++;
-					if (left < right && nums[right] == nums[right - 1]) right--;
+					while (left < right &&nums[left] == nums[left + 1]) left++;
+					while (left < right && nums[right] == nums[right - 1]) right--;
 
 					left++;
 					right--;
