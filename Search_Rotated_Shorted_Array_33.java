@@ -1,4 +1,4 @@
-git gitpackage com.LeetCode;
+package com.LeetCode;
 
 public class Search_Rotated_Shorted_Array_33 {
 	public static void main(String[] args) {
